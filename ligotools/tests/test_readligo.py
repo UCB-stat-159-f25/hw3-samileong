@@ -2,7 +2,7 @@ import os
 import numpy as np
 from ligotools import readligo
 
-TEST_FILE = "data/H-H1_LOSC_4_V1-1126259446-32.hdf5"
+TEST_FILE = "data/H-H1_LOSC_4_V2-1126259446-32.hdf5"
 
 def test_loaddata_output_structure():
     """Check that loaddata returns strain, time, and metadata"""
