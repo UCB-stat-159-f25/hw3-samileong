@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools >= 70", "numpy>=2.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = ligotools
+authors = [
+    { name = "Ligo Scientific Collaboration (LSC) and Samantha Leong" }
+]
+description = "Homework 3 Installable Package"
+readme = "README.md"
+
+requires-python = ">=3.9"
+dependencies = [
+    "numpy==2.0",
+    "scipy==1.13",
+    "h5py==3.12",
+    "matplotlib==3.9",
+    "ipykernel==6.29",
+]
+
+license = "BSD-3-Clause"
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+keywords = ["LIGO", "gravitational waves", "tools"]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/UCB-stat-159-f25/hw3-samileong"
+Issues = "https://github.com/UCB-stat-159-f25/hw3-samileong/issues"
+
+[tool.setuptools]
+packages = ["ligotools"]
