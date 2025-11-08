@@ -1,3 +1,7 @@
 Asked AI to generate tests for ligotools. Used the general format they provided and modified based on the test files in the repo.
 Also troubleshooted with ChatGPT to check for syntax error in pyproject.tml
 Used AI to filter through the code of the plotting function in the notebook. Asked it to turn the cell into a function to input into the utils.py, then, had it format the cell to remove previous code and refer to the function in utils.py
+
+Asked AI to give a template for Makefile. Also asked for commands to check if the Makefile was working. 
+
+AI response: 
