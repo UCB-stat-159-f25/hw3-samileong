@@ -4,4 +4,42 @@ Used AI to filter through the code of the plotting function in the notebook. Ask
 
 Asked AI to give a template for Makefile. Also asked for commands to check if the Makefile was working. 
 
-AI response: 
+AI response: conda env list
+# Variables
+# -----------------------
+ENV_NAME = hw3_env
+ENV_FILE = environment.yml
+PYTHON = python3
+NOTEBOOK = LOSC_Event_tutorial.ipynb
+MYST_SITE = _build
+
+# -----------------------
+# Phony targets
+# -----------------------
+.PHONY: all env html clean
+
+# -----------------------
+# Default target
+# -----------------------
+all: html
+
+# -----------------------
+# env: create or update environment
+# -----------------------
+env:
+	@echo "Creating or updating conda environment..."
+	conda env update --name $(ENV_NAME) --file $(ENV_FILE) --prune
+
+# -----------------------
+# html: build MyST HTML site
+# -----------------------
+html: $(NOTEBOOK)
+	@echo "Building HTML site from notebook $(NOTEBOOK)..."
+	myst build --html
+
+# -----------------------
+# clean: remove build artifacts
+# -----------------------
+clean:
+	@echo "Cleaning build artifacts..."
+	rm -rf $(MYST_SITE) figures audio
