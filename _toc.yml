@@ -1,0 +1,5 @@
+format: jb-book
+root: README.md
+
+chapters:
+  - file: LOSC_Event_tutorial.ipynb
