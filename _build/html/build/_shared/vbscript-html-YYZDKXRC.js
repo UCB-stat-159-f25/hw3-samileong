@@ -1,0 +1,1 @@
+import{c as t}from"/user/samileong/myst-build/stat_159/hw3-samileong/build/_shared/chunk-2NH4LW52.js";var i=t((a,n)=>{function e(s){return{name:"VBScript in HTML",subLanguage:"xml",contains:[{begin:"<%",end:"%>",subLanguage:"vbscript"}]}}n.exports=e});export default i();

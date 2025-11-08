@@ -1,0 +1,1 @@
+import{c as s}from"/user/samileong/myst-build/stat_159/hw3-samileong/build/_shared/chunk-2NH4LW52.js";var t=s((i,n)=>{function a(e){return{aliases:["pycon"],contains:[{className:"meta",starts:{end:/ |$/,starts:{end:"$",subLanguage:"python"}},variants:[{begin:/^>>>(?=[ ]|$)/},{begin:/^\.\.\.(?=[ ]|$)/}]}]}}n.exports=a});export default t();
